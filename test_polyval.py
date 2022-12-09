@@ -9,7 +9,7 @@ test_polynomials = (
 test_x = [-5, -0.5, 0, 0.5, 5]
 
 test_expectations = (
-    [116, 1.25, 1, 3.25, 136],
+    [0, 1.25, 1, 3.25, 136],
     [-5, -0.5, 0, 0.5, 5]
 )
 
@@ -22,4 +22,4 @@ def test_eval_poly(poly, expected):
     res = []
     for x in test_x:
         res.append(polyval.eval_poly(poly, x))
-    assert res == 
+    assert res == expected
